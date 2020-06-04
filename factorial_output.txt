@@ -1,0 +1,74 @@
+## oerformance evaluation of diffecent factorial functions with various inputs and input ranges
+
+> evaluate_perf(0)
+Unit: microseconds
+expr   min     lq    mean median     uq     max neval
+factorial_loop(n)  10.3  13.95 176.805  15.40  20.40 15330.2   100
+factorial_reduce(n) 108.8 136.50 394.548 165.75 231.35 18278.7   100
+factorial_func(n)  10.2  12.55 149.146  14.80  20.90 12373.1   100
+factorial_mem(n) 111.0 122.10 510.790 150.45 195.05 29665.6   100
+
+> evaluate_perf(1)
+Unit: microseconds
+expr   min     lq    mean median     uq    max neval
+factorial_loop(n)  11.9  12.70  17.675   14.6  22.25   40.6   100
+factorial_reduce(n) 552.6 596.95 702.820  648.9 753.55 1605.0   100
+factorial_func(n)  18.4  19.20  23.681   21.1  27.10   49.2   100
+factorial_mem(n)  10.7  11.30  18.091   14.7  22.35  106.4   100
+
+> evaluate_perf(5)
+
+Unit: microseconds
+expr   min     lq    mean median     uq    max neval
+factorial_loop(n)  12.4  12.90  16.942  15.75  20.65   29.4   100
+factorial_reduce(n) 629.4 664.55 746.509 696.45 782.80 1508.1   100
+factorial_func(n)  54.1  55.40  63.546  59.35  65.15  225.7   100
+factorial_mem(n)  21.9  23.00  34.928  29.75  37.20  212.5   100
+> evaluate_perf(12)
+
+Unit: microseconds
+expr   min     lq     mean  median      uq    max neval
+factorial_loop(n)  13.1  14.35   21.552   17.05   24.35   69.3   100
+factorial_reduce(n) 717.4 865.30 1075.802 1017.70 1213.30 2530.0   100
+factorial_func(n) 118.6 122.55  141.248  134.20  147.15  324.5   100
+factorial_mem(n)  22.4  25.65   37.305   30.25   41.10  163.9   100
+
+> evaluate_perf(15)
+
+Unit: microseconds
+expr    min      lq     mean  median      uq    max neval
+factorial_loop(n)   15.1   17.20   27.766   20.70   29.95  290.0   100
+factorial_reduce(n) 1233.0 1529.65 1731.100 1608.35 1718.45 3660.6   100
+factorial_func(n)  167.7  181.60  262.990  196.30  216.80 4281.9   100
+factorial_mem(n)   25.7   28.45   58.258   37.30   51.30 1049.6   100
+There were 50 or more warnings (use warnings() to see the first 50)
+
+> evaluate_perf(1:5)
+
+Unit: microseconds
+expr    min      lq     mean  median      uq    max neval
+factorial_loop(n)  321.5  332.05  388.098  347.45  435.65  826.3   100
+factorial_reduce(n) 1030.6 1091.40 1213.233 1139.00 1287.95 2424.2   100
+factorial_func(n)  361.2  372.75  441.162  394.70  474.60 1145.6   100
+factorial_mem(n)  347.8  357.45  414.945  369.35  466.80  745.8   100
+There were 50 or more warnings (use warnings() to see the first 50)
+
+> evaluate_perf(1:10)
+
+Unit: microseconds
+expr    min     lq     mean  median      uq     max neval
+factorial_loop(n)  416.8  581.5 1092.338  765.80 1078.05  7762.5   100
+factorial_reduce(n) 1400.9 2017.1 4197.975 2634.65 3583.45 46061.7   100
+factorial_func(n)  490.6  775.7 1480.138  985.30 1707.95 11630.4   100
+factorial_mem(n)  468.5  695.4 1226.598  903.15 1302.45  7233.9   100
+There were 50 or more warnings (use warnings() to see the first 50)
+
+> evaluate_perf(1:15)
+
+Unit: microseconds
+expr    min      lq     mean  median      uq    max neval
+factorial_loop(n)  320.2  354.25  515.731  448.70  613.10 1732.9   100
+factorial_reduce(n) 1055.7 1139.85 1445.090 1274.15 1706.05 3138.2   100
+factorial_func(n)  358.9  376.25  549.191  485.35  655.90 1552.1   100
+factorial_mem(n)  350.9  364.80  481.143  403.50  545.95 1165.7   100
+There were 50 or more warnings (use warnings() to see the first 50)
